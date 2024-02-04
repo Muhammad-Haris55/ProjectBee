@@ -3,28 +3,22 @@ import { NavLink } from 'react-router-dom';
 
 
 function ZPanel() {
-    // let side=document.getElementsByClassName('.sidebar')
     const toggleSidebar = () => {
-        side.body.classList.toggle("open");
+        document.body.classList.toggle("open");
     }
     return (
         <>
-            <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-2 dcol1">
-                <nav class="sidebar" id="side">
+            <div className="dcol1">
+                <nav class="sidebar col-xxl-12 col-xl-12 col-1g-11" id="side">
                     <div className="sidebar-inner">
                         <header class="sidebar-header">
-                            <button
-                                type="button"
-                                class="sidebar-burger"
-                                onClick={toggleSidebar}
-                                id="hambutton"
-                            ></button>
+
                         </header>
                         <nav class="sidebar-menu">
                             <div className="beehead">
                                 <NavLink className='nav-link' to='/'>
 
-                                <img id='bee' src="bee.png" alt="" />
+                                    <img id='bee' src="bee.png" alt="" />
                                 </NavLink>
                             </div>
                             <hr />
@@ -41,18 +35,18 @@ function ZPanel() {
                             <button type="button" id="sbutton">
                                 <img src="fb.png" />
                                 <NavLink className='nav-link' to='/Facebook'><span id='spam'>Facebook</span></NavLink>
-                                
+
                             </button>
                             <button type="button" id="sbutton">
                                 <img src="tiktok.png" />
                                 <NavLink className='nav-link' to='/Tiktok'><span id='spam'>Tiktok</span></NavLink>
-                                
+
                             </button>
                             <hr />
                             <button type="button" id="sbutton">
                                 <img src="use.png" />
                                 <NavLink className='nav-link' to='/Userposts'><span id='spam'>User table</span></NavLink>
-                                
+
                             </button>
                             <hr />
                             <button type="button" id="sbutton">
@@ -64,6 +58,58 @@ function ZPanel() {
                     </div>
                 </nav>
             </div>
+            <div className="can">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Admin Panel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div className='content'>
+                            <ul id='ul'>
+                                <p id='splatform'>Social Platforms</p>
+                                <button type="button" id="sbutton">
+                                    <img src="tw.png" id='simg' alt="" />
+                                    <NavLink className="nav-link" to="/Twitter"><span id='spam2'>Twitter</span></NavLink>
+                                </button>
+                                <button type="button" id="sbutton">
+                                    <img src="insta2.png" id='simg' />
+                                    <NavLink className="nav-link" to="/Instagram"><span id="spam2">Instagram</span></NavLink>
+
+                                </button>
+                                <button type="button" id="sbutton">
+                                    <img src="fb.png" id='simg' />
+                                    <NavLink className='nav-link' to='/Facebook'><span id='spam2'>Facebook</span></NavLink>
+
+                                </button>
+                                <button type="button" id="sbutton">
+                                    <img src="tiktok.png" id='simg' />
+                                    <NavLink className='nav-link' to='/Tiktok'><span id='spam2'>Tiktok</span></NavLink>
+
+                                </button>
+                                <hr />
+                                <button type="button" id="sbutton">
+                                    <img src="use.png" id='simg' />
+                                    <NavLink className='nav-link' to='/Userposts'><span id='spam2'>User table</span></NavLink>
+
+                                </button>
+                                <hr />
+                                <button type="button" id="sbutton">
+                                    <NavLink className="nav-link" to="/" ><span id='spam2' >Sign Out</span>
+                                    </NavLink>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="sidebar-burger"
+                onClick={toggleSidebar}
+                id="hambutton"
+            ></button>
         </>
     )
 }

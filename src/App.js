@@ -1,4 +1,3 @@
-// import React from 'react';
 import Main from './Main';
 import Display from './Display';
 import Report from './Report';
@@ -9,7 +8,6 @@ import Instatable from './Instatable';
 import Userposts from './Userposts';
 import Tiktok from './Tiktok';
 import Adminpost from './Adminpost';
-import ZPanel from './ZPanel';
 import { Route,Routes } from 'react-router-dom';
 function App() {
   return (
@@ -26,7 +24,6 @@ function App() {
         <Route path='/Instagram' element={<Instatable/>}></Route>
         <Route path='/Tiktok' element={<Tiktok/>}></Route>
         <Route path='/Userposts' element={<Userposts/>}></Route>
-        <Route path='/z' element={<ZPanel/>}></Route>
       </Routes>
     </>
   );

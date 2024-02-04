@@ -1,21 +1,20 @@
 // import React from 'react'
 import { NavLink } from 'react-router-dom'
-import React,{ useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Aos from 'aos';
 
 
 function Main() {
-    useEffect(() => {
-        Aos.init();
-    }, [])
+    
     return (
         <>
+
             <div className="main">
-                <div className="head col-xxl-10 col-xl-11 col-lg-11 col-md-12 col-sm-12 col-xl-12">
+                <div className="headz col-xxl-12 col-xl-11 col-lg-11 col-md-12 col-sm-12 mx-auto ">
                     <img src="pf3.png" className='mt-2' alt="" id='aeroplane' />
                     <h2 className='text-center pt-3'>Words Of <b>Palestine</b></h2>
                     <h6>Boost Palestine's Voice on Social Media with a Single Click - Everyone</h6>
-                    <div className="response mt-2" data-aos='fade-right' data-aos-delay="500">
+                    <div className="response"  >
                         <div className="sresponse">
                             <div className="rimg">
                                 <img src="share2.png" alt="" />
@@ -34,7 +33,7 @@ function Main() {
 
                             <NavLink className='nav-link' to='Report'>
                                 <div className="rtext">
-                                    <h5 id='report'>Report Content</h5>
+                                    <h5 id='report'>Report content</h5>
                                     <p>Help to prevent the sppread of false or anti-palestine content by reporting it</p>
                                 </div>
                             </NavLink>
@@ -58,8 +57,7 @@ function Main() {
 
             </div>
             <div className="main2">
-
-                <div className="col-xxl-3 col-xl-5 col-lg-5 col-md-5 col-sm-10 head2 mt-2 " data-aos='fade-left' >
+                <div className="col-xxl-3 col-xl-5 col-lg-5 col-md-5 col-sm-10 head2 mt-2 ">
                     <div className="box1">
                         <div className="icon">
                             <img src="plus.png" alt="" />
@@ -95,6 +93,7 @@ function Main() {
 
                 </div>
             </div>
+
         </>
 
     )

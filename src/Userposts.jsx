@@ -8,32 +8,39 @@ function Userposts() {
                 <div className="dbodyx">
                     <ZPanel/>
                     <div className="reqformx">
-                        {/* <button type="button" class="btn btn-primary mt-1" id='postbtn'>Add Post</button> */}
+                        <div className="btnhead mt-1">
+                                <span>
+                                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <img src="ham.png" id='sham' alt="" />
+                                    </a>
+                                </span>
+                            </div>
 
-                        <div className="text-center col-md-10 mx-auto mt-1 mainreqx">
-                            <div className="card mt-2">
+
+                        <div className="text-center col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-2 mainreqx">
+                            <div className=" mt-2">
                                 <div class="header">
                                     <h2>User Posts</h2>
                                 </div>
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Title </th>
-                                            <th scope="col">Platform</th>
-                                            <th scope="col">Url</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col" id='colborder'><p>#</p> </th>
+                                            <th scope="col" id='colborder'><p>Title</p> </th>
+                                            <th scope="col" id='colborder'><p>Platform</p></th>
+                                            <th scope="col" id='colborder'><p>Url</p></th>
+                                            <th scope="col" id='colborder'><p>Action</p></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td colSpan='1' id='colborder'>1</td>
-                                            <td colSpan='1' id='colborder'>Facebook DP</td>
-                                            <td colSpan='1' id='colborder'>Tiktok</td>
-                                            <td colSpan='1' id='colborder'>www.google.com</td>
+                                            <td colSpan='1' className='change' id='colborder'><p>1</p></td>
+                                            <td colSpan='1' id='colborder'><p>Facebook DP</p></td>
+                                            <td colSpan='1' id='colborder'><p>Tiktok</p></td>
+                                            <td colSpan='1' id='colborder'><p>www.google.com</p></td>
                                             <td colSpan='1' id='lastcol'>
-                                                <button class="btn btn-primary mt-2" style={{ fontSize: '12px' }}>Approve</button>
-                                                <button class="btn btn-danger mt-2" style={{ fontSize: '12px' }}>Reject</button>
+                                                <button class="btn btn-primary mt-2"  id='del'>Approve</button>
+                                                <button class="btn btn-danger mt-2" id='del'>Reject</button>
                                             </td>
                                         </tr>
                                     </tbody>

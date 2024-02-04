@@ -7,7 +7,7 @@ function Display() {
     return (
         <>
             <div className="dmain">
-                <div className="dbox col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-8  mx-auto">
+                <div className="dbox col-xxl-4 col-xl-5 col-lg-5 col-md-10 col-sm-9 mx-auto">
                     <div className="top">
                         <div className="timg">
                             <img src="bee.png" alt="" />
@@ -92,7 +92,6 @@ function Display() {
                     </div>
                 </div>
             </div>
-            {/* <script src='Display2.js'></script> */}
         </>
 
     )

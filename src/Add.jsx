@@ -8,7 +8,6 @@ function Add() {
             <div className="add">
                 <div className="col-md-4 mx-auto addform">
                     <div className="addhead">
-
                         <h3>Add a post!</h3>
                         <NavLink className='nav-link' to='/'><h6>Return</h6></NavLink>
                     </div>
